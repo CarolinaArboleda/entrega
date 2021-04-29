@@ -29,33 +29,42 @@ function jugar(){
     lanzamiento_2=tirardado();
     actualizarDado(dado1,lanzamiento_1);
     actualizarDado(dado2,lanzamiento_2);
-    console.log("sus puntos son " + puntos);
-
 
   suma=lanzamiento_1+lanzamiento_2
   turno=turno+1;
+
   if ((suma==7 || suma==11)&&turno==1) {
 
     alert("¡Felicitaciones! Ganaste :D");
-    turno=1;
+    turno=0;
+
 
   }
   else if ((suma==2 || suma==3 || suma==12)&&turno==1){
 
     alert("¡Qué mal! Pierdes el juego :(");
-    turno=1;
-    
+    turno=0;
+
+
   }
   else if (suma==4 || suma==5 || suma==6 || suma==8 || suma==10){
 
     alert("¡Ganaste un punto! :D");
     puntos = puntos+1
+
+
+
   }
 
-  else if (suma==7 && turno != 1 && puntos==0){
+  else if (suma==7 && turno != 1){
     alert("¡Qué mal! Pierdes el juego :(");
-    turno=1;
+    turno=0;
+    puntos=0;
+
 
   }
+
+console.log("turno " + turno);
+console.log("sus puntos son " + puntos);
 
 }
