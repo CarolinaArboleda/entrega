@@ -4,7 +4,7 @@ var posiciones = [0,-160,-320,-481,-642,-803];
 var dado1,dado2,boton_tirar;
 var suma;
 var turno = 0;
-var puntos = 0;
+var punto = 0;
 
 window.onload = init;
 
@@ -43,28 +43,63 @@ function jugar(){
   else if ((suma==2 || suma==3 || suma==12)&&turno==1){
 
     alert("¡Qué mal! Pierdes el juego :(");
-    turno=0;
-
-
-  }
-  else if (suma==4 || suma==5 || suma==6 || suma==8 || suma==10){
-
-    alert("¡Ganaste un punto! :D");
-    puntos = puntos+1
-
-
+    turno=0
 
   }
 
   else if (suma==7 && turno != 1){
     alert("¡Qué mal! Pierdes el juego :(");
     turno=0;
-    puntos=0;
+    punto=0;
 
 
   }
 
+  else if (suma==4 && turno==1){
+    alert("Se establece el punto como 4");
+    punto=4;
+
+  }
+
+  else if (suma==5 && turno==1){ 
+    alert("Se establece el punto como 5");
+    punto=5;
+
+  }
+
+  else if (suma==6 && turno==1){
+    alert("Se establece el punto como 6");
+    punto=6;
+
+  }
+
+  else if (suma==8 && turno==1){
+    alert("Se establece el punto como 8");
+    punto=8;
+
+  }
+
+  else if (suma==9 && turno==1) {
+    alert("Se establece el punto como 9");
+    punto=9;
+
+  }
+
+  else if (suma==10 && turno==1){
+    alert("Se establece el punto como 10");
+    punto=10;
+
+  }
+
+  else if (suma==punto && turno!=1){
+    alert("¡Felicitaciones! Ganaste :D");
+    turno=0;
+    punto=0;
+
+  }
+
 console.log("turno " + turno);
-console.log("sus puntos son " + puntos);
+console.log("el punto es " + punto);
+
 
 }
