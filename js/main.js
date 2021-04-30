@@ -35,20 +35,20 @@ function jugar(){
 
   if ((suma==7 || suma==11)&&turno==1) {
 
-    alert("¡Felicitaciones! Ganaste :D");
+    alert("¡Felicitaciones! Ganaste :D <3");
     turno=0;
 
 
   }
   else if ((suma==2 || suma==3 || suma==12)&&turno==1){
 
-    alert("¡Qué mal! Pierdes el juego :(");
+    alert("¡Qué mal! Pierdes el juego :( </3");
     turno=0
 
   }
 
   else if (suma==7 && turno != 1){
-    alert("¡Qué mal! Pierdes el juego :(");
+    alert("¡Qué mal! Pierdes el juego :( </3");
     turno=0;
     punto=0;
 
@@ -92,7 +92,7 @@ function jugar(){
   }
 
   else if (suma==punto && turno!=1){
-    alert("¡Felicitaciones! Ganaste :D");
+    alert("¡Felicitaciones! Ganaste :D <3");
     turno=0;
     punto=0;
 
