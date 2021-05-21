@@ -45,10 +45,7 @@ background-size: cover;
   cursor:pointer;
 }
 
-#texto_instrucciones{
--webkit-text-stroke:2px;
-  -webkit-text-stroke-color:#FFFFFF;
-}
+
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
   #ejercicio{
