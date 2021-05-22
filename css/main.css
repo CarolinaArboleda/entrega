@@ -34,13 +34,13 @@ background-size: cover;
 
 #boton_tirar{
   display:block;
-  width:100px;
+  width:110px;
   font-family:Helvetica,Times,sans-serif;
-  font-size:20px;
+  font-size:24px;
   height:60px;
   margin:10px auto;
   background-color:#DD6600;
-  color:#1C2833;
+  color:#DE8226;
   border:0;
   border-radius:10px;
   cursor:pointer;
